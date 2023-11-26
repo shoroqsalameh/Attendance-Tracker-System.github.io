@@ -1,0 +1,68 @@
+<span style="font-family: verdana, geneva, sans-serif;">
+    <!DOCTYPE html>
+    <html lang="en">
+  
+    <head>
+      <meta charset="UTF-8" />
+      <title>Feedback</title>
+      <link rel="stylesheet" href="css/trainees.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+  
+    <body>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#" class="logo">
+                <img src="media/logo-no-background.png">
+                <span class="nav-item">Adam</span>
+              </a></li>
+           
+            <li><a class="link_side" href="Add-Traineers.html">
+                <i class="fa-solid fa-people-group fas"></i>
+                <span class="nav-item">Trainers</span>
+              </a></li>
+            <li><a class="link_side" href="feedback.html">
+                <i class="fa-solid fa-comment fas"></i>
+                <span class="nav-item">Feedback</span>
+              </a></li>
+          
+  
+            <li><a class="link_side" href="#" class="logout" onclick="()=>
+              localStorage.clear();
+              window.location.replace('loginPage.html');
+            ">
+                <i class="fas fa-sign-out-alt fas"></i>
+                <span class="nav-item">Log out</span>
+              </a></li>
+          </ul>
+        </nav>
+        
+        <!-- <h3 style="margin:20px;">
+            Feedback
+        </h3> -->
+        <main class="table" onload="populateTable()">
+          <section class="table__header">
+          </section>
+          <section class="table__body">
+            <table>
+              <thead>
+                <tr>
+                  <th> Student Name <span class="icon-arrow">&UpArrow;</span></th>
+                  <th> Trainer Name <span class="icon-arrow">&UpArrow;</span></th>
+                  <th> Feedback <span class="icon-arrow">&UpArrow;</span></th>
+                  <th> Date <span class="icon-arrow">&UpArrow;</span></th>
+                </tr>
+              </thead>
+              <tbody id="tableBody">
+              </tbody>
+            </table>
+          </section>
+        </div>
+        <script src="js/feedbackjs.js"></script>
+  
+  
+    </body>
+  
+    </html>
+  </span>
