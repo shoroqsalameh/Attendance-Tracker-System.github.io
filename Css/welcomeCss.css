@@ -11,7 +11,7 @@ body {
 
 .left-side {
     flex: 1;
-    background-image: url('/Media/pc.jpg'); 
+    background-image: url('pc.jpg'); 
     background-size: cover;
     background-position: center;
     
